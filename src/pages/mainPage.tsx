@@ -1,36 +1,46 @@
+import { Stack, Typography } from "@mui/material";
+import fd from '../assets/gymlogo.png'
+import tovar from '../assets/tovar.png'
+import gymex from '../assets/gymex.png'
+import banner from '../assets/banner.jpg'
+import first from '../assets/first.png'
+import second from '../assets/second.png'
+import third from '../assets/third.png'
+import forth from '../assets/forth.png'
+import fifth from '../assets/fifth.png'
+import six from '../assets/six.png'
+import seven from '../assets/seven.png'
+import eight from '../assets/eight.png'
 
 export function MainPage() {
     return (
         <Stack>
             <div className="bg-white flex-col justify-center items-start inline-flex">
-                <div className="self-stretch  bg-white flex-col justify-start items-start inline-flex">
-                    <div className="self-stretch bg-black flex-col justify-start items-center flex">
+                <div className="w-[100%] bg-white flex-col justify-center items-center inline-flex">
+                    <div className="w-[100%] bg-black flex-col justify-start items-end flex">
                         <div className=" justify-end items-start inline-flex">
-                            <div className="self-stretch flex-col justify-start items-start inline-flex">
-                                <div className="px-1 py-4 justify-start items-center gap-1 inline-flex">
+                            <div className=" flex-col justify-start items-start inline-flex">
+                                <div className="px-40 py-4 justify-start items-end gap-1 inline-flex">
                                     <div className="text-white text-sm font-bold font-['Open Sans'] uppercase leading-[21px]">EN</div>
                                     <div className="w-4 h-4 pl-[4.37px] pr-[4.76px] pt-[0.40px] pb-[0.68px] origin-top-left -rotate-90 justify-center items-center flex" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="h-[145px] flex-col justify-start items-center flex">
-                        <div className="self-stretch h-[145px] pt-2.5 flex-col justify-between items-center flex">
+                    <div className=" h-[145px] flex-col justify-start items-center flex">
+                        <div className=" h-[145px] pt-2.5 flex-col justify-between items-center flex">
                             <div className="w-[940px] pr-[0.01px] justify-start items-center gap-[0.70px] inline-flex">
                                 <div className="justify-start items-start flex">
-                                    <img className="w-[247.51px] h-[70px] relative" src="https://via.placeholder.com/248x70" />
+                                    <img className="w-[247.51px] h-[70px] relative" src={fd} />
                                 </div>
-                                <div className="grow shrink basis-0 px-20 flex-col justify-start items-start inline-flex">
+                                <div className="grow shrink basis-0 pl-20 pr-10 flex-col justify-center items-start inline-flex">
                                     <div className="self-stretch pt-1 pb-0.5 justify-center items-start inline-flex">
                                         <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start inline-flex">
                                             <div className="self-stretch justify-center items-start inline-flex">
-                                                <div className="grow shrink basis-0 h-7 px-3.5 py-[4.50px] bg-white border-2 border-black flex-col justify-start items-start inline-flex">
+                                                <div className="grow shrink basis-0 h-7 px-3.5 py-[4.50px] bg-white border-2 border-black flex-col justify-end items-start inline-flex">
                                                     <div className="self-stretch h-[19px] flex-col justify-start items-start flex">
                                                         <div className="self-stretch text-gray-400 text-sm font-normal font-['Open Sans']">Search entire store here...</div>
                                                     </div>
-                                                </div>
-                                                <div className="w-7 h-[26px] px-1 py-[3px] bg-black justify-center items-center flex">
-                                                    <div className="w-5 h-5 py-[1.52px] justify-center items-center flex" />
                                                 </div>
                                             </div>
                                         </div>
@@ -40,13 +50,13 @@ export function MainPage() {
                                     <div className="justify-start items-center flex">
                                         <div className="flex-col justify-start items-start inline-flex">
                                             <div className="self-stretch justify-center items-center inline-flex">
-                                                <div className="w-10 h-6 pl-2 pr-px justify-start items-center flex">
-                                                    <div className="w-6 h-6 pl-[2.14px] pr-[2.40px] justify-center items-center flex" />
+                                                <div className="w-10 h-6 pl-2  justify-start items-center flex">
+                                                    <img src={tovar} style={{ scale: "2" }} />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="flex-col justify-start items-start inline-flex">
-                                            <div className="h-12 pl-2 pr-px py-3 justify-start items-center inline-flex">
+                                            <div className="h-12 pl-2  py-3 justify-start items-center inline-flex">
                                                 <div className="justify-start items-start flex">
                                                     <div className="w-8 h-6 pr-[0.33px] py-[0.51px] justify-center items-center flex" />
                                                 </div>
@@ -82,46 +92,49 @@ export function MainPage() {
                                             <div className="text-black text-[17px] font-bold font-['Open Sans'] uppercase leading-7">Blog</div>
                                         </div>
                                     </div>
-                                    <div className="w-4 h-[0px] origin-top-left rotate-90 border border-[#d6d6d6]"></div>
+                                    <div className="w-[0px] h-[20px] origin-top-left  border border-[#d6d6d6]"></div>
                                     <div className="h-[53px] pt-[11.25px] pb-[13.75px] flex-col justify-start items-start inline-flex">
                                         <div className="justify-start items-center gap-1.5 inline-flex">
-                                            <div className="w-[18px] h-[18px] justify-center items-center flex" />
-                                            <div className="text-black text-[17px] font-bold font-['Open Sans'] uppercase leading-7">GYMEX</div>
-                                        </div>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.4482 0.25H5.55182L0 5.8018V12.6982L5.55182 18.25H12.4482L18 12.6982V5.8018L12.4482 0.25ZM6.50602 12.7849L2.94941 9.22831L6.50602 5.67169C7.8506 4.32711 10.0627 4.32711 11.4072 5.67169L14.9639 9.22831L11.4072 12.7849C10.0627 14.1295 7.89398 14.1295 6.50602 12.7849Z" fill="#FF4100" />
+                                            </svg>
+                                            <div className="text-black text-[17px] font-bold font-['Open Sans'] uppercase leading-7">GYMBEX</div> </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="self-stretch h-[442px] flex-col justify-start items-start inline-flex">
-                    <div className="self-stretch h-[442px] pl-[25650px] flex-col justify-start items-center flex">
-                        <div className="h-[441.60px] pl-[1425px] pr-[27075px] flex-col justify-center items-start flex">
-                            <div className="w-[1425px] grow shrink basis-0 flex-col justify-start items-start flex">
-                                <img className="h-[441.60px] relative" src="https://via.placeholder.com/1425x442" />
+                <div className="w-[100%] h-[442px] flex-col justify-start items-start inline-flex">
+                    <div className="w-[100%] h-[442px]  flex-col justify-start items-center flex">
+                        <div className="h-[441.60px] flex-col justify-center items-start flex">
+                            <div className="w-[100%] relative grow shrink basis-0 flex-col justify-start items-start flex">
+                                <img className="h-[441.60px] relative" src={banner} />
+                                <div className="absolute bottom-[10px] w-[1425px] px-[594.33px] pt-[8.50px] justify-start items-start gap-[9.60px] inline-flex">
+                                    <div className="w-[15px] h-[15px] bg-[#ff4100] rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                    <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="w-[1425px] px-[594.33px] pt-[8.50px] justify-start items-start gap-[9.60px] inline-flex">
-                        <div className="w-[15px] h-[15px] bg-[#ff4100] rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                        <div className="w-[15px] h-[15px] bg-white rounded-[10px]" />
-                    </div>
                 </div>
-                <div className="self-stretch h-[1623.70px] px-[242.50px] flex-col justify-start items-center inline-flex">
+                <div className="w-[100%] h-[1623.70px] px-[242.50px] flex-col justify-start items-center inline-flex">
                     <div className="h-[1623.70px] pb-20 flex-col justify-start items-start flex">
-                        <div className="self-stretch h-[109px] py-6 flex-col justify-start items-start flex">
-                            <div className="self-stretch justify-center items-start inline-flex">
+                        <div className="w-[100%] h-[109px] py-6 flex-col justify-start items-start flex">
+                            <div className="w-[100%] justify-center items-start inline-flex">
                                 <div className="w-[235px] self-stretch justify-start items-start flex">
                                     <div className="w-[43px] h-[35px] pr-2 flex-col justify-start items-start inline-flex">
-                                        <div className="w-[35px] h-[35px] pt-[2.07px] pb-[2.06px] justify-center items-center inline-flex" />
+                                        <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.3587 2.12821C24.8339 1.97669 23.2945 2.16293 21.8499 2.67371C20.4052 3.18448 19.0908 4.00723 18.0002 5.08347C16.9194 3.99654 15.608 3.16658 14.163 2.65503C12.7181 2.14347 11.1766 1.96343 9.65266 2.12821C7.29304 2.40574 5.10012 3.48461 3.44031 5.18456C1.78049 6.88452 0.754323 9.10259 0.533252 11.4682C0.397867 13.1408 0.677251 14.821 1.34664 16.3598C2.01602 17.8986 3.05473 19.2485 4.37068 20.2898L16.0263 32.1219C16.2738 32.3813 16.5716 32.5874 16.9016 32.7277C17.2315 32.868 17.5865 32.9396 17.945 32.9379C18.6361 32.9362 19.2999 32.6676 19.7976 32.1881L31.5856 20.4001C32.8993 19.3546 33.9391 18.0052 34.6153 16.4684C35.2915 14.9316 35.5838 13.2534 35.4671 11.5784C35.2625 9.1977 34.2459 6.95959 32.5877 5.23912C30.9294 3.51865 28.7303 2.42034 26.3587 2.12821ZM29.0273 17.2133L18.0002 28.2404L7.14951 17.3897L6.97308 17.2133C5.99698 16.4583 5.26944 15.4283 4.8843 14.256C4.49916 13.0836 4.47409 11.8228 4.8123 10.6361C5.15052 9.44935 5.83651 8.39118 6.78182 7.59802C7.72712 6.80487 8.88837 6.31311 10.1158 6.18618C10.3474 6.18618 10.5789 6.13105 10.8105 6.13105C11.8008 6.11949 12.7789 6.35064 13.6593 6.80428C14.5397 7.25793 15.2956 7.92028 15.8609 8.73344C16.1119 9.08676 16.4421 9.37647 16.825 9.57943C17.2079 9.78239 17.633 9.89296 18.0663 9.90232C18.5017 9.90393 18.9308 9.7981 19.3155 9.59421C19.7002 9.39032 20.0287 9.09466 20.2718 8.73344C21.0038 7.68597 22.0419 6.89044 23.2436 6.45581C24.4454 6.02118 25.7521 5.9687 26.9849 6.30556C28.2176 6.64242 29.3161 7.35216 30.1298 8.33754C30.9436 9.32293 31.4328 10.5358 31.5304 11.81C31.5645 12.8436 31.3558 13.8708 30.9211 14.8092C30.4864 15.7475 29.8378 16.5709 29.0273 17.2133Z" fill="black" />
+                                        </svg>
                                     </div>
                                     <div className="self-stretch pr-2 flex-col justify-start items-start inline-flex">
                                         <div className="self-stretch h-[19px] flex-col justify-start items-start flex">
@@ -134,11 +147,13 @@ export function MainPage() {
                                 </div>
                                 <div className="w-[235px] self-stretch justify-start items-start flex">
                                     <div className="w-[43px] h-[35px] pr-2 flex-col justify-start items-start inline-flex">
-                                        <div className="w-[35px] h-[35px] px-1 justify-center items-center inline-flex" />
+                                        <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.53763 7.75C4.53384 9.59098 4.91051 11.4129 5.64401 13.1014C6.37751 14.79 7.45201 16.3088 8.80013 17.5625C7.4649 18.8263 6.399 20.3471 5.6665 22.0333C4.934 23.7196 4.55001 25.5366 4.53763 27.375V35H31.4626V27.3125C31.4657 25.4716 31.0886 23.65 30.3552 21.9615C29.6217 20.2731 28.5476 18.7542 27.2001 17.5C28.5365 16.2371 29.6032 14.7165 30.3358 13.03C31.0683 11.3436 31.4517 9.52618 31.4626 7.6875V0H4.53763V7.75ZM9.05013 27.3125C9.04791 25.7194 9.47218 24.1547 10.2789 22.7809C11.0856 21.4071 12.2453 20.2743 13.6376 19.5L17.1876 17.5L13.6376 15.5C12.2453 14.7257 11.0856 13.5929 10.2789 12.2191C9.47218 10.8453 9.04791 9.28063 9.05013 7.6875V4.525H26.9376V7.6875C26.9425 9.28117 26.5193 10.8469 25.7124 12.2212C24.9054 13.5954 23.7442 14.7278 22.3501 15.5L18.8001 17.5L22.2876 19.5C23.6817 20.2722 24.8429 21.4046 25.6499 22.7788C26.4568 24.1531 26.88 25.7188 26.8751 27.3125V30.475H8.98763V27.3125H9.05013Z" fill="black" />
+                                        </svg>
                                     </div>
                                     <div className="self-stretch pr-2 flex-col justify-start items-start inline-flex">
                                         <div className="self-stretch h-[19px] flex-col justify-start items-start flex">
-                                            <div className="text-black text-[15px] font-bold font-['Open Sans'] leading-[18.75px]">24 hours</div>
+                                            <div className="text-black text-[15px] font-bold font-['Open Sans'] leading-[18.75px]">&lt;24 hours</div>
                                         </div>
                                         <div className="self-stretch h-[22px] flex-col justify-start items-start flex">
                                             <div className="text-black text-[13px] font-normal font-['Open Sans'] leading-[21.13px]">fast delivery</div>
@@ -147,7 +162,10 @@ export function MainPage() {
                                 </div>
                                 <div className="w-[235px] self-stretch justify-start items-start flex">
                                     <div className="w-[43px] h-[35px] pr-2 flex-col justify-start items-start inline-flex">
-                                        <div className="w-[35px] h-[35px] relative" />
+                                        <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9939 0.181641L0.5 8.68943V26.3105L17.9939 34.8183L35.4939 26.3105V8.68943L17.9939 0.181641ZM4.82959 13.4066L15.8322 18.4265V28.9507L4.82959 23.5977V13.4066ZM31.1644 23.5977L20.1799 28.9507V15.6289L7.74221 9.97922L17.9939 4.99565L31.1644 11.3962V23.5977Z" fill="black" />
+                                            <path d="M23.2077 14.2362V20.9395L27.507 17.936V11.4749L21.1852 8.59259L16.4741 11.2388L23.2077 14.2362Z" fill="black" />
+                                        </svg>
                                     </div>
                                     <div className="self-stretch pr-2 flex-col justify-start items-start inline-flex">
                                         <div className="self-stretch h-[19px] flex-col justify-start items-start flex">
@@ -160,7 +178,9 @@ export function MainPage() {
                                 </div>
                                 <div className="w-[235px] self-stretch justify-start items-start flex">
                                     <div className="w-[43px] h-[35px] pr-2 flex-col justify-start items-start inline-flex">
-                                        <div className="w-[35px] h-[35px] justify-center items-center inline-flex" />
+                                        <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M27.375 7.02501C26.7817 5.25708 25.648 3.72019 24.134 2.63135C22.6201 1.5425 20.8023 0.956726 18.9375 0.956726C17.0727 0.956726 15.2549 1.5425 13.741 2.63135C12.227 3.72019 11.0933 5.25708 10.5 7.02501H5.3125L1.625 36H36.25L32.5625 7.02501H27.375ZM18.9375 5.33751C19.6121 5.32631 20.2799 5.47308 20.8877 5.76609C21.4954 6.05911 22.0262 6.49024 22.4375 7.02501H15.4375C15.8534 6.49528 16.3851 6.06778 16.9918 5.77527C17.5984 5.48277 18.264 5.33303 18.9375 5.33751ZM6.625 31.5875L9.1875 11.4H28.75L31.3125 31.5875H6.625Z" fill="black" />
+                                        </svg>
                                     </div>
                                     <div className="self-stretch pr-2 flex-col justify-start items-start inline-flex">
                                         <div className="self-stretch h-[19px] flex-col justify-start items-start flex">
@@ -173,88 +193,88 @@ export function MainPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="self-stretch h-[222px] pb-4 flex-col justify-start items-start flex">
-                            <div className="self-stretch h-[206px] pt-3 bg-white flex-col justify-start items-center gap-3 flex">
-                                <div className="self-stretch h-4 flex-col justify-start items-start flex">
-                                    <div className="self-stretch text-black text-[15px] font-bold font-['Open Sans'] leading-none">Discover tried and tested products to help you reach your goals. You want to:</div>
-                                </div>
-                                <div className="w-[950px] h-[166px] relative">
-                                    <div className="w-[237.50px] h-[83px] p-1 left-0 top-0  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Lose weight</div>
+                        <div className="w-[100%] h-[222px] pb-4 flex-col justify-start items-start flex">
+                            <div className="w-[100%] h-[206px] pt-3 flex-col justify-start items-center gap-3 flex">
+                                <div>
+                                    <div className="text-black text-[15px] pb-3 font-bold font-['Open Sans'] leading-none">Discover tried and tested products to help you reach your goals. You want to:</div>
+                                    <div className="w-[950px] h-[166px] relative">
+                                        <div className="w-[237.50px] h-[83px] p-1 left-0 top-0  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={first} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Lose weight</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-[237.50px] top-0  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Build muscle mass</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-[237.50px] top-0  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={second} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Build muscle mass</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-[475px] top-0  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Promote<br />regeneration</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-[475px] top-0  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={third} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Promote<br />regeneration</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-[712.50px] top-0  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Improve<br />performance</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-[712.50px] top-0  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={forth} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Improve<br />performance</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-0 top-[83px]  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Snack in a healthy<br />way</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-0 top-[83px]  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={fifth} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Snack in a healthy<br />way</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-[237.50px] top-[83px]  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Start exercising at<br />home</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-[237.50px] top-[83px]  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={six} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Start exercising at<br />home</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-[475px] top-[83px]  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Boost immunity</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-[475px] top-[83px]  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={seven} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Boost immunity</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="w-[237.50px] h-[83px] p-1 left-[712.50px] top-[83px]  flex-col justify-center items-start inline-flex">
-                                        <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
-                                            <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
-                                                <img className="w-[75px] h-[75px] relative" src="https://via.placeholder.com/75x75" />
-                                                <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
-                                                    <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Sportswear</div>
+                                        <div className="w-[237.50px] h-[83px] p-1 left-[712.50px] top-[83px]  flex-col justify-center items-start inline-flex">
+                                            <div className="self-stretch h-[75px] bg-[#e9e9e9] flex-col justify-center items-center flex">
+                                                <div className="w-[229.50px] grow shrink basis-0 justify-between items-center inline-flex">
+                                                    <img className="w-[75px] h-[75px] relative" src={eight} />
+                                                    <div className="grow shrink basis-0 pl-2 pr-1 flex-col justify-start items-start inline-flex">
+                                                        <div className="self-stretch text-[#666666] text-xs font-bold font-['Open Sans'] uppercase leading-none">Sportswear</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -763,8 +783,8 @@ export function MainPage() {
                                 <div className="h-[412.70px] flex-col justify-start items-start flex">
                                     <div className="w-[37.59px] h-8 pl-[0.13px] pr-[0.31px] pt-[9.92px] pb-[9.88px] justify-center items-center inline-flex" />
                                     <div className="w-[37.59px] h-8 pl-[0.13px] pr-[0.31px] pt-[9.92px] pb-[9.88px] justify-center items-center inline-flex" />
-                                    <div className="self-stretch h-[412.70px] pl-[4510px] flex-col justify-start items-center flex">
-                                        <div className="w-[7406px] pl-[966px] pr-[5474px] justify-start items-start inline-flex">
+                                    <div className="self-stretch h-[412.70px]  flex-col justify-start items-center flex">
+                                        <div className="w-[7406px] pl-[966px]  justify-start items-start inline-flex">
                                             <div className="w-[322px] self-stretch p-3 flex-col justify-start items-start inline-flex">
                                                 <div className="self-stretch h-[347.70px] flex-col justify-start items-start gap-4 flex">
                                                     <img className="h-[155.70px] relative" src="https://via.placeholder.com/298x156" />
@@ -1030,7 +1050,7 @@ export function MainPage() {
             </div>
         </Stack>
     );
-=======
+
   return (
     <div className="Body w-96 h-96 relative bg-white flex-col justify-start items-start inline-flex">
     <div className="Background w-96 h-40 pt-2.5 bg-white flex-col justify-start items-start inline-flex">
