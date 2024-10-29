@@ -1,0 +1,40 @@
+name: gymbeam-hackathon
+services:
+#  backend:
+#    build:
+#      context: .
+#      args:
+#        api_key: ${api_key}
+#    develop:
+#      watch:
+#      - action: rebuild
+#        path: ./Dockerfile
+#      - action: rebuild
+#        path: ./requirements.txt
+#        target: /app/requirements.txt
+#      - action: sync
+#        path: ./src
+#        target: /app/src
+#    volumes:
+#      - ./db/:/app/db
+#    expose:
+#      - 8000
+#    ports:
+#      - 8000:8000
+  web-server:
+    container_name: web-server
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: web-server/Dockerfile
+      args:
+        host: "0.0.0.0"
+    expose:
+      - 80
+    ports:
+      - 80:80
+    develop:
+      watch:
+        - action: rebuild
+          path: ./web-server/nginx.conf
+          target: /etc/nginx/conf.d/default.conf
